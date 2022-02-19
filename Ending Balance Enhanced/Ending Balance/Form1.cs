@@ -38,6 +38,11 @@ namespace Ending_Balance
                         //add current monthly inerest to balance
                         balance = balance + (INTEREST_RATE * balance);
 
+                        //display the month's ending balance
+                        detailListBox.Items.Add("The ending balance " +
+                            "for month " + count + " is " + 
+                            balance.ToString("c"));
+
                         //add one to the counter
                         count += 1;
                     }
@@ -64,7 +69,9 @@ namespace Ending_Balance
             startingBalTextBox.Text = "";
             monthsTextBox.Text = "";
             endingBalanceLabel.Text = "";
-
+            //listbox clear
+            detailListBox.Items.Clear();
+            //focus reset
             startingBalTextBox.Focus();
         }
 

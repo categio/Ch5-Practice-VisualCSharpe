@@ -37,11 +37,12 @@
             this.startingBalTextBox = new System.Windows.Forms.TextBox();
             this.monthsPromptLabel = new System.Windows.Forms.Label();
             this.startingBalancePromptLabel = new System.Windows.Forms.Label();
+            this.detailListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(176, 112);
+            this.exitButton.Location = new System.Drawing.Point(215, 277);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 19;
@@ -51,7 +52,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(95, 112);
+            this.clearButton.Location = new System.Drawing.Point(134, 277);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 18;
@@ -61,7 +62,7 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(14, 112);
+            this.calculateButton.Location = new System.Drawing.Point(53, 277);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
             this.calculateButton.TabIndex = 17;
@@ -72,7 +73,7 @@
             // endingBalanceLabel
             // 
             this.endingBalanceLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.endingBalanceLabel.Location = new System.Drawing.Point(122, 71);
+            this.endingBalanceLabel.Location = new System.Drawing.Point(161, 236);
             this.endingBalanceLabel.Name = "endingBalanceLabel";
             this.endingBalanceLabel.Size = new System.Drawing.Size(100, 23);
             this.endingBalanceLabel.TabIndex = 16;
@@ -81,7 +82,7 @@
             // outputDescriptionLabel
             // 
             this.outputDescriptionLabel.AutoSize = true;
-            this.outputDescriptionLabel.Location = new System.Drawing.Point(31, 76);
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(70, 241);
             this.outputDescriptionLabel.Name = "outputDescriptionLabel";
             this.outputDescriptionLabel.Size = new System.Drawing.Size(85, 13);
             this.outputDescriptionLabel.TabIndex = 15;
@@ -89,14 +90,14 @@
             // 
             // monthsTextBox
             // 
-            this.monthsTextBox.Location = new System.Drawing.Point(122, 40);
+            this.monthsTextBox.Location = new System.Drawing.Point(161, 40);
             this.monthsTextBox.Name = "monthsTextBox";
             this.monthsTextBox.Size = new System.Drawing.Size(100, 20);
             this.monthsTextBox.TabIndex = 14;
             // 
             // startingBalTextBox
             // 
-            this.startingBalTextBox.Location = new System.Drawing.Point(122, 13);
+            this.startingBalTextBox.Location = new System.Drawing.Point(161, 13);
             this.startingBalTextBox.Name = "startingBalTextBox";
             this.startingBalTextBox.Size = new System.Drawing.Size(100, 20);
             this.startingBalTextBox.TabIndex = 13;
@@ -104,7 +105,7 @@
             // monthsPromptLabel
             // 
             this.monthsPromptLabel.AutoSize = true;
-            this.monthsPromptLabel.Location = new System.Drawing.Point(19, 43);
+            this.monthsPromptLabel.Location = new System.Drawing.Point(58, 43);
             this.monthsPromptLabel.Name = "monthsPromptLabel";
             this.monthsPromptLabel.Size = new System.Drawing.Size(97, 13);
             this.monthsPromptLabel.TabIndex = 12;
@@ -113,17 +114,26 @@
             // startingBalancePromptLabel
             // 
             this.startingBalancePromptLabel.AutoSize = true;
-            this.startingBalancePromptLabel.Location = new System.Drawing.Point(28, 17);
+            this.startingBalancePromptLabel.Location = new System.Drawing.Point(67, 17);
             this.startingBalancePromptLabel.Name = "startingBalancePromptLabel";
             this.startingBalancePromptLabel.Size = new System.Drawing.Size(88, 13);
             this.startingBalancePromptLabel.TabIndex = 11;
             this.startingBalancePromptLabel.Text = "Starting Balance:";
             // 
+            // detailListBox
+            // 
+            this.detailListBox.FormattingEnabled = true;
+            this.detailListBox.Location = new System.Drawing.Point(12, 74);
+            this.detailListBox.Name = "detailListBox";
+            this.detailListBox.Size = new System.Drawing.Size(319, 147);
+            this.detailListBox.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(265, 148);
+            this.ClientSize = new System.Drawing.Size(343, 317);
+            this.Controls.Add(this.detailListBox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.calculateButton);
@@ -151,7 +161,7 @@
         private System.Windows.Forms.TextBox startingBalTextBox;
         private System.Windows.Forms.Label monthsPromptLabel;
         private System.Windows.Forms.Label startingBalancePromptLabel;
-
+        private System.Windows.Forms.ListBox detailListBox;
     }
 }
 
