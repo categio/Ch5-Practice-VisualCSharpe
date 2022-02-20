@@ -19,6 +19,15 @@ namespace Squares
 
         private void goButton_Click(object sender, EventArgs e)
         {
+            //Display the countdown to showing squares
+            for (int count = 10; count >= 1; count--)
+            {
+                outputListBox.Items.Add(count.ToString() + "...");
+            }
+
+            //display blast off
+            outputListBox.Items.Add("Blast Off!!");
+
             // Constant for the maximum number
             const int MAX_VALUE = 10;
 
@@ -28,8 +37,8 @@ namespace Squares
             // Display the list of numbers and their squares.
             for (number = 1; number <= MAX_VALUE; number++)
             {
-                outputListBox.Items.Add("The square of " +
-                    number + " is " + (number * number));
+                outputListBox.Items.Add(number + " is " + 
+                    (number * number) + " when squared.");
             }
         }
 

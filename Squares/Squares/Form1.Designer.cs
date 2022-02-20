@@ -38,14 +38,14 @@
             // outputListBox
             // 
             this.outputListBox.FormattingEnabled = true;
-            this.outputListBox.Location = new System.Drawing.Point(46, 71);
+            this.outputListBox.Location = new System.Drawing.Point(46, 51);
             this.outputListBox.Name = "outputListBox";
-            this.outputListBox.Size = new System.Drawing.Size(164, 147);
+            this.outputListBox.Size = new System.Drawing.Size(164, 290);
             this.outputListBox.TabIndex = 0;
             // 
             // goButton
             // 
-            this.goButton.Location = new System.Drawing.Point(10, 234);
+            this.goButton.Location = new System.Drawing.Point(10, 359);
             this.goButton.Name = "goButton";
             this.goButton.Size = new System.Drawing.Size(75, 23);
             this.goButton.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(91, 234);
+            this.clearButton.Location = new System.Drawing.Point(91, 359);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(171, 234);
+            this.exitButton.Location = new System.Drawing.Point(171, 359);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 3;
@@ -77,18 +77,18 @@
             // 
             this.instructionsLabel.AutoSize = true;
             this.instructionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionsLabel.Location = new System.Drawing.Point(25, 26);
+            this.instructionsLabel.Location = new System.Drawing.Point(86, 20);
             this.instructionsLabel.Name = "instructionsLabel";
-            this.instructionsLabel.Size = new System.Drawing.Size(210, 32);
+            this.instructionsLabel.Size = new System.Drawing.Size(80, 16);
             this.instructionsLabel.TabIndex = 4;
-            this.instructionsLabel.Text = "Click \"Go\" to see a list of numbers \r\nand their squares.";
+            this.instructionsLabel.Text = "Click \"Go\" !!!";
             this.instructionsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(258, 272);
+            this.ClientSize = new System.Drawing.Size(258, 402);
             this.Controls.Add(this.instructionsLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
