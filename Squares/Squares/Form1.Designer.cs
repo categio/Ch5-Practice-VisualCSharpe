@@ -30,8 +30,8 @@
         {
             this.outputListBox = new System.Windows.Forms.ListBox();
             this.goButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.instructionsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -53,25 +53,25 @@
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
-            // button1
+            // clearButton
             // 
-            this.button1.Location = new System.Drawing.Point(91, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "&Clear";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.clearButton.Location = new System.Drawing.Point(91, 234);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 2;
+            this.clearButton.Text = "&Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // button2
+            // exitButton
             // 
-            this.button2.Location = new System.Drawing.Point(171, 234);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "E&xit";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.exitButton.Location = new System.Drawing.Point(171, 234);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 3;
+            this.exitButton.Text = "E&xit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // instructionsLabel
             // 
@@ -90,8 +90,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(258, 272);
             this.Controls.Add(this.instructionsLabel);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.outputListBox);
             this.Name = "Form1";
@@ -105,8 +105,8 @@
 
         private System.Windows.Forms.ListBox outputListBox;
         private System.Windows.Forms.Button goButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label instructionsLabel;
     }
 }

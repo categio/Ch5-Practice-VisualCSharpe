@@ -33,13 +33,13 @@ namespace Squares
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void clearButton_Click(object sender, EventArgs e)
         {
             //clear all data  from list box
             outputListBox.Items.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
         {
             //close the form/program
             this.Close();
